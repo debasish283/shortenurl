@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(href='css/styles.css', rel='stylesheet')
+  body
+    .site-wrapper
+      .site-wrapper-inner
+        .main-container
+          .inner.cover
+            .row
+              .col-lg-8
+                .input-group.input-group-lg
+                  input#url-field.form-control(type='text', placeholder='Enter the link you want to shorten...')
+                  span.input-group-btn
+                    button.btn.btn-shorten(type='button') Submit
+              .col-lg-4
+                #link
+    script(src='https://code.jquery.com/jquery-2.2.0.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    script(src='javascripts/shorten.js')
